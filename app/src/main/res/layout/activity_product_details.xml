@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".Product_Details_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="6"
+                >
+
+                <ImageView
+                    android:id="@+id/arrowLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="2"
+                    android:onClick="onLeftArrowClick"
+                    android:src="@drawable/arrow_back" />
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_weight="4"
+                    android:layout_height="200dp" />
+
+
+                <ImageView
+                    android:id="@+id/arrowRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_weight="2"
+                    android:onClick="onLeftArrowClick"
+                    android:src="@drawable/arrow_right" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/images"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/ProductDetailTitle"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/Price"
+                style="@style/ProductDetailText"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/description"
+                style="@style/ProductDetailText"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/Brand"
+                style="@style/ProductDetailText"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/rating"
+                style="@style/ProductDetailText"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

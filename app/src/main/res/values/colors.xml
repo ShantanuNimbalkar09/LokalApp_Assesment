@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Background">#3F2305</color>
+    <color name="Spinner">#DFD5BF</color>
+    <color name="Card">#F2EAD3</color>
+    <color name="Text">#F5F5F5</color>
+
+    <color name="colorBackground">#F5F5F5</color>
+    <color name="colorPrimary">#F2EAD3</color>
+    <color name="colorAccent">#DFD7BF</color>
+    <color name="colorText">#3F2305</color>
+
+
+    <color name="border_color">#CCCCCC</color>
+</resources>
