@@ -53,7 +53,7 @@ public class Product_Details_Activity extends AppCompatActivity {
         if (intent != null && intent.hasExtra("product")) {
             Product product = (Product) intent.getSerializableExtra("product");
 
-            // Now you can use the product details as needed
+
             Picasso.get().load(product.getThumbnail()).into(images);
 
             title.setText(product.getTitle());

@@ -250,10 +250,10 @@ public class MainActivity extends AppCompatActivity {
     public void updateCategoryList() {
         Set<String> Product_category = new HashSet<>();
         for (Product product : productList) {
-            Log.d("ProductList", "Category: " + String.valueOf(product.getCategory()));
+           // Log.d("ProductList", "Category: " + String.valueOf(product.getCategory()));
             Product_category.add(product.getCategory());
         }
-        Log.d("categories", String.valueOf(Product_category));
+        //Log.d("categories", String.valueOf(Product_category));
         List<String> catergories = new ArrayList<>(Product_category);
 
 
