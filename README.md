@@ -1,5 +1,5 @@
 # LokalApp_Assesment
-Created An application to Display the data fo an endpoint""
+Created An application to Display the data of an endpoint"https://dummyjson.com/products"
 
 When you open application this is the first page you can see
 
